@@ -12,7 +12,7 @@ __Stand:__      *Bearbeitungsdatum*
 Eine kurze Beschreibung des Dokuments. Wenige Absätze.
 
 
-image::name/Videoshop_EKD.png[]
+image::Videoshop_EKD.png[]
 
 
 == Inhaltsverzeichnis
