@@ -7,8 +7,8 @@ import org.salespointframework.useraccount.UserAccountManager;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-import kickstart.person.Mitarbeiter;
 import kickstart.person.MitarbeiterRepository;
+import kickstart.person.Mitarbeiter;
 
 @Component
 public class Init implements DataInitializer {
