@@ -13,6 +13,9 @@ public class Mitarbeiter extends Person {
 	private @OneToOne UserAccount userAccount;
 	
 	// Konstruktor
+	public Mitarbeiter(){		
+	}
+	
 	public Mitarbeiter(String name, UserAccount userAccount) {
 		super.name = name;
 		this.userAccount = userAccount;
