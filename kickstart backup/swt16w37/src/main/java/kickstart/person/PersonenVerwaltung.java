@@ -9,7 +9,6 @@ import org.springframework.util.Assert;
 
 @Component
 public class PersonenVerwaltung {
-	
 	private final UserAccountManager uaManager;
 	private final MitarbeiterRepository mRepo;
 	
@@ -17,7 +16,7 @@ public class PersonenVerwaltung {
 	@Autowired
 	public PersonenVerwaltung(UserAccountManager uaManager, MitarbeiterRepository mRepo){
 		Assert.notNull(uaManager, "UserAccountManager must not be null!");
-		Assert.notNull(mRepo, "mRepo must not be null!");
+		Assert.notNull(mRepo, "UserAccountManager must not be null!");
 		
 		this.uaManager = uaManager;
 		this.mRepo = mRepo;
