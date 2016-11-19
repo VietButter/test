@@ -9,6 +9,7 @@ import org.springframework.util.Assert;
 
 @Component
 public class PersonenVerwaltung {
+	
 	private final UserAccountManager uaManager;
 	private final MitarbeiterRepository mRepo;
 	
