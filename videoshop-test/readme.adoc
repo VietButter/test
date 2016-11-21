@@ -1,0 +1,4 @@
+== Readme
+
+login als boss
+Feature sortiert die Kundenliste
