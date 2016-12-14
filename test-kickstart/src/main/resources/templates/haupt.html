@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
+		<title th:text="Test">TEST</title>
+	</head>
+<body>
+	<nav th:include="na :: na">	
+	</nav>
+	<ul>
+		<li><a href="newMitarbeiterFormular.html">MF</a></li>	
+		<li><a href="mitarbeiterListe.html">ML</a></li>	
+		<li class="loginlogout"><a th:href="@{/login}">Login</a></li>
+		<li class="loginlogout"><a href="@{/logout}">Logout</a></li>
+	</ul>
+</body>
+</html>

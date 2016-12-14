@@ -63,7 +63,7 @@ public class Init implements DataInitializer {
 		System.out.println("finde Mitarbeiter mit Name name_Peter_m2: " + mRepo.findByName("name_Peter_m2"));
 		System.out.println();
 		*/
-		Mitarbeiter m1 = pVerwaltung.createMitarbeiter("nameHans", "userHans", "22", "dfdf");
+		Mitarbeiter m1 = pVerwaltung.createMitarbeiter("nameHans", "boss", "123", "ROLE_ADMIN");
 		pVerwaltung.saveMitarbeiter(m1);
 		System.out.println("");
 		System.out.println(m1.getId());

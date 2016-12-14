@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../resources/css/style.css" />
+	</head>
+<body>
+	<nav th:fragment="na">
+
+		<ul>
+			<li sec:authorize="hasRole('ROLE_KOCH')">
+				<a th:href="@{/mL}" href="mitarbeiterListe.html" th:text="mitarbeiterListe">mitarbeiterListe</a>
+			</li>
+			
+			<li sec:authorize="hasRole('ROLE_ADMIN')">
+				<a th:href="@{/mL}" href="mitarbeiterListe.html" th:text="mitarbeiterListe2">mitarbeiterListe2</a>
+			</li>
+
+			<li sec:authorize="!isAuthenticated()" class="loginlogout">
+				<a th:href="@{/login}" >Login</a>
+			</li>
+
+			<li sec:authorize="isAuthenticated()" class="loginlogout">
+				<form th:action="@{/logout}" method="post">
+					<input type="submit" value="Logout" th:value="logout" />
+				</form>
+			</li>
+			
+		</ul>
+	</nav>
+</body>
+</html>

@@ -16,11 +16,6 @@
 
 	<dependencies>
 
-		<dependency>
-			<groupId>de.tudresden.inf.st</groupId>
-			<artifactId>salespoint-framework</artifactId>
-			<version>6.3.0.RELEASE</version>
-		</dependency>
 
 		<!-- Persistence -->
 
@@ -36,6 +31,11 @@
 			<optional>true</optional>
 		</dependency>
 
+		<dependency>
+			<groupId>de.tudresden.inf.st</groupId>
+			<artifactId>salespoint-framework</artifactId>
+			<version>6.3.1.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>

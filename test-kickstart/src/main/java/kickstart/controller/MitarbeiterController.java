@@ -38,12 +38,18 @@ public class MitarbeiterController {
 	}
 	
 	// Methoden
-	@RequestMapping("/")
+	
+	@RequestMapping({"/haupt","/"})
+	public String haupt(Model model) {				
+		return "haupt";
+	}
+	
+	@RequestMapping("/mL")
 	public String mitarbeiter(Model model) {
 		
 		model.addAttribute("mitarbeiterListe", pVerwaltung.getMitarbeiterRepo().findAll());
 		
-		return "person/mitarbeiterListe";
+		return "mitarbeiterListe";
 	}
 	
 	@RequestMapping("/newMitarbeiterFormular")
@@ -51,7 +57,7 @@ public class MitarbeiterController {
 		
 		model.addAttribute("mitarbeiterDaten", new MitarbeiterRegFormular());
 		
-		return "person/newMitarbeiterFormular";
+		return "newMitarbeiterFormular";
 	}
 	
 	@RequestMapping("/add")

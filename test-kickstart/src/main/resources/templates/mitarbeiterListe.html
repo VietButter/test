@@ -9,7 +9,7 @@
 		<h1>Welcome!</h1>
 		
 		<div>
-			<table>
+			<table border="1">
 				<caption>Mitarbeiterliste</caption>
 				<thead>
 					<tr>
@@ -17,8 +17,8 @@
 						<th>Id</th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr th:each=" mitarbeiter : ${mitarbeiterListe}">
+				<tbody >
+					<tr th:each=" mitarbeiter : ${mitarbeiterListe}" >
 						<td th:text="${mitarbeiter.name}"></td>
 						<td th:text="${mitarbeiter.id}"></td>
 					</tr>															
